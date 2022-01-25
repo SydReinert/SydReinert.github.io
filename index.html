@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html>
 <header>
+    <style>
+        /** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+ 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+    </style>
     <ul>
         <li><a href='index.html'>home</a></li>
         <li><a href='https://zekewandeler.github.io/nested.html'>nested examples</a></li>
@@ -11,9 +48,19 @@
         <li><a href='https://alexanderspoon.github.io'>Alex's page</a></li>
         <li><a href='https://sydreinert.github.io'>Sydney's page</a></li>
         </ul>
-<h1>hello</h1>
 </header>
 <body>
+    <div class = "row">
+    <div class = "col-3">
+        <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
+    </div>
+    <div class = "col-6">
+        <h1>hello</h1>
+    </div>
+    <div class = "col-3">
+        <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
+    </div>
+</div>
     <p>All about me</p>
     <p>Born and raised in Tucson, Arizona. Moved to Boise, Idaho to persue my college education. Got a job as a graphic designer at the New Product Development Lab at Boise State University.</p>
 
@@ -22,7 +69,7 @@
     <br></br>
     <img src = "https://i.pinimg.com/originals/43/0c/12/430c127b05e0543bc1e7ba07d4407995.gif">    
     <h2>wow</h2>
-    <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
+   
 
 </body>
 </html>
