@@ -2,6 +2,105 @@
 <html>
 <header>
     <style>
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
         /** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
 * {
     box-sizing: border-box;
@@ -37,6 +136,12 @@
     clear: both;
     display: table;
 }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* Style the header */
 .header {
   background-color: #f1f1f1;
@@ -92,21 +197,100 @@
     </div>
     <div class = "col-6">
         <h1>Sydney Reinert</h1>
+        <p>An abosolute unit</p>
     </div>
     <div class = "col-3">
         <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
     </div>
 </div>
 </div>
+
+<div class = "row">
+<div class = "col-3">
+    <h2>MEEEEE</h2>
     <p>All about me</p>
     <p>Born and raised in Tucson, Arizona. Moved to Boise, Idaho to persue my college education. Got a job as a graphic designer at the New Product Development Lab at Boise State University.</p>
+</div>
 
-    <br></br>
-    <img src = "https://i.kinja-img.com/gawker-media/image/upload/s--MqM36Kxv--/c_scale,fl_progressive,q_80,w_800/imbeq9anmpv8a6lcdgea.jpg">
-    <br></br>
-    <img src = "https://i.pinimg.com/originals/43/0c/12/430c127b05e0543bc1e7ba07d4407995.gif">    
-    <h2>wow</h2>
-   
+<div class = "col-6">
+    <h2>shoomga</h2>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
+</div>
+
+<div class = "col-3">
+    <h2>Wow</h2>
+    <img src = "https://i.pinimg.com/originals/43/0c/12/430c127b05e0543bc1e7ba07d4407995.gif" class="responsive">   
+</div>
+</div>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://bnetproduct-a.akamaihd.net//fe9/60d495d55bf8ef6d845ddf8e4b9d5bbf-WoW_NPX_BattleNet_Banners_1534x640.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/12/28044357/17628-shadowlands-craft-your-own-custom-legendary-in-the-forge-of-domination.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://cdn.mos.cms.futurecdn.net/oTCDn6XUuhbviacL9N8mfm.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+
+
+
+    
+
+
+<br></br>
     <div class="footer">
         <p>Da Footer</p>
       </div>
