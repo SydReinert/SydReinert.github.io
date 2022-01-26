@@ -185,7 +185,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-.container {
+.containeryou {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -201,6 +201,55 @@ img {vertical-align: middle;}
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
     </style>
     <div class = "topnav">
@@ -239,7 +288,7 @@ img {vertical-align: middle;}
 
 <div class = "col-6">
     <h2>shmooga</h2>
-    <div class = "container">
+    <div class = "containeryou">
     <iframe  class = "responsive-iframe" width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
 </div>
 </div>
@@ -339,16 +388,16 @@ img {vertical-align: middle;}
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <img src="dog.jpeg" alt="Shiba" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <img src="charcol.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <img src="mask.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <img src="book.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
   </div>
 </div>
 
