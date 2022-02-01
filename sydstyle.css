@@ -189,7 +189,7 @@ img {vertical-align: middle;}
 .content {
     border-radius: 6px;
     padding: 5%;
-    background-color: rgb(233, 139, 139);
+    background-color: white;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 }
 
