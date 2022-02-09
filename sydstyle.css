@@ -1,8 +1,51 @@
 body {
     background-color: #F0EAE3;
-    font-family: 'DM Sans', sans-serif; margin:0
-
+    font-family: 'DM Sans', sans-serif; margin:0;
+    animation-name: example;
+    animation-duration: 4s;
 }
+    @keyframes example {
+      from {background-color:#ecc18f;} 
+      to {background-color:#F0EAE3;}  
+    }
+
+    @keyframes examplefont {
+      0%   {color: #333;}
+      25%  {color: #8b53f1;}
+      50%  {color: #9b80c5;}
+      100% {color: #333;}
+    }
+    
+
+    #div2 {transition-timing-function: ease;}
+
+    .divani{
+      transition: width 2s;
+    }
+    .divani:hover{
+      width: 300px;
+    }
+
+    
+    @keyframes exampleshape {
+      0%   {border-bottom-color:red; left:0px; top:0px;}
+      25%  {border-bottom-color:yellow; left:200px; top:0px;}
+      50%  {border-bottom-color:blue; left:200px; top:200px;}
+      75%  {border-bottom-color:green; left:0px; top:200px;}
+      100% {border-bottom-color:red; left:0px; top:0px;}
+    }
+
+    .shapetria {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+      position: relative;
+      animation-name: exampleshape;
+      animation-duration: 4s;
+    }
+
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -163,6 +206,8 @@ img {vertical-align: middle;}
 .nav a{
     text-decoration: none; 
     color: rgba(0,0,0,0.65);
+    animation-name: examplefont;
+  animation-duration: 4s;
 }
 
 .nav a:hover{
