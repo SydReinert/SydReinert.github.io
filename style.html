@@ -6,14 +6,13 @@ img:hover {
 }
 
 .imgz {
-position: absolute;
   z-index: -1;
 }
 .p1 {
   font-family: Impact;
 }
 .backgroundcolor{
-    color:plum
+    background-color:plum
 }
 </style>
 
@@ -53,12 +52,14 @@ position: absolute;
     </div>
     </div>
 
-    <div class = "content">
+    <div class='row'>
+        <div class='col-1'></div>
+        <div class='col-10 content'>
         <h1>Sydney Reinert Style</h1>
-        <ol class ="backgroundcolor">
+        <ol>
             <li><p class = "p1"> Changing the text font: </p></li>
-            <li>Changing the background color:</li>
-            <li>Changing the drop shadow:</li>
+            <li><p class ="backgroundcolor">Changing the background color:</p> <p style="font-size: 13px;">This is the background color that is plum</ul></li>
+            <li style="text-shadow: 2px 2px 4px #6f00ff;color:rgb(72, 10, 187)">Changing the drop shadow:</li>
             <li>Changing the z-index:</li>
             <div class = imgz>
                 <p>The text goes over the image</p>
@@ -68,6 +69,7 @@ position: absolute;
                 <img src="https://i.cbc.ca/1.5359228.1577206958!/fileImage/httpImage/smudge-the-viral-cat.jpg" alt="Salad" width="100" height="100">
             </li>
           </ol>
+    </div>
     </div>
 
 </body>
