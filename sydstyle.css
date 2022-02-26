@@ -1,3 +1,25 @@
+.fontfamilymain{
+  text-align:center; 
+  font-family: federo, 
+  sans-serif; font-size: 30px
+}
+
+.arttextplacement{
+  text-align:center;
+}
+
+.imagewidth{
+  width:100%;
+}
+
+#roundedcorners{
+  border-radius: 5%;
+}
+
+.gifplacement{
+  transform:scaleX(-1);
+}
+
 body {
     background-color: #F0EAE3;
     font-family: 'DM Sans', sans-serif; margin:0;
@@ -206,6 +228,7 @@ img {vertical-align: middle;}
     border-radius: 50%;
     -webkit-filter: blur(100px);
     filter: blur(100px);
+    background-color:#8b53f1 ;
 }
 
 .logo{

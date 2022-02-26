@@ -23,7 +23,7 @@
     <div class='col-1 '><a href='https://sinabeana4283.github.io'>Sarina</a></div>
     <div class='col-1 '><a href='https://alexanderspoon.github.io'>Alex</a></div>
     <div class='col-1 '><a href='https://sydreinert.github.io'>Sydney</a></div>
-    <div id="backgroundShape" style="background-color: #8b53f1;"></div>
+    <div class = "navbackgroundcolor" id="backgroundShape"></div>
 </nav>
 </header>
 <body>
@@ -32,67 +32,72 @@
     <div class = "col-2">
         <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
     </div>
-    <div class = "col-8" style="font-family: federo, sans-serif; font-size: 20px"> 
+    <div class = "col-8 fontfamilymain"> 
       <h1>Sydney Reinert</h1>
         <p>-An abosolute unit-</p>
     </div>
     <div class = "col-2">
-        <img src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif" style= transform:scaleX(-1)>
+        <img class = "gifplacement" src = "https://c.tenor.com/Fhg7SnBUCcEAAAAj/cat-dance.gif">
     </div>
 </div>
 </div>
 
 <div class = "row">
 <div class = "col-3">
-    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Who this?</h3>
+    <h3 class ="fontfamilymain">Who this?</h3>
     <hr/>
     <p>All about me:</p>
     <p>Born and raised in Tucson, Arizona. I moved to Boise, Idaho to obtain my college education. First majoring in visual arts, then swithcing to GIMM, I was also able to secure I job at the New Product Development lab at Boise State as a graphic designer. I like many things, but what I love is Star Wars, Cats, Art, Metal, and World of Warcraft. Max Rebo is the best Star Wars character and I will be taking no other comments on that subject matter. I also enjoy swimming, I was a competitive swimmer for more than 6 years of my life so I enjoy my time in the water.</p>
 </div>
 
 <div class = "col-6">
-    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Bars</h3>
+    <h3 class = "fontfamilymain">Bars</h3>
     <hr/>
     <div class = "containeryou">
-    <iframe  style ="border-radius: 5%;" class = "responsive-iframe" width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
+    <iframe id="roundedcorners" class = "responsive-iframe" width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
 </div>
 </div>
 
 <div class = "col-3 divani divani:hover" id = "div2"}>
-    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Me</h3>
+    <h3 class = "fontfamilymain">Me</h3>
     <hr/>
     <div class = "center">
-      <img style ="border-radius: 10%;" src = "SelfPortrait.jpg" width = "280" height="450" class="responsive">   </div>
+      <img id="roundedcorners" src = "SelfPortrait.jpg" width = "280" height="450" class="responsive">   </div>
 </div>
 </div>
 <br>
 
 
-<div style="text-align:center">
-  <h2 style="font-family: federo, sans-serif; font-size: 30px">My Artwork</h2>
+<div>
+  <h2 class = "fontfamilymain">My Artwork</h2>
   <hr/>
-  <p>Click on the images below:</p>
+  <p class = "arttextplacement">Click on the images below:</p>
 </div>
+
+
+
+
+
 
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="dog.jpeg" alt="Shiba" style="width:100%" onclick="myFunction(this);">
+    <img class = "imagewidth" src="dog.jpeg" alt="Dog" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="charcol.jpg" alt="Lucky Cat" style="width:100%" onclick="myFunction(this);">
+    <img class = "imagewidth" src="charcol.jpg" alt="Charcol" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="mask.jpg" alt="Original Plague Doctor Mask" style="width:100%" onclick="myFunction(this);">
+    <img class = "imagewidth" src="mask.jpg" alt="Mask" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="book.png" alt="Digital Book" style="width:100%" onclick="myFunction(this);">
+    <img class = "imagewidth" src="book.png" alt="Book" onclick="myFunction(this);">
   </div>
 </div>
 
 <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
+  <img class = "imagewidth" id="expandedImg">
   <div id="imgtext"></div>
 </div>
 
@@ -105,6 +110,7 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 </script>
+
   
 </body>
 </html>
