@@ -13,7 +13,7 @@
 
   <nav class="row nav center">
     <div class="col-1 logo"><a href="#">®</a></div>
-    <div class="col-2"></div>
+    <div class="col-1"></div>
     <div class='col-1'><a href='https://zekewandeler.github.io/index.html'>Home</a></div>
     <div class='col-1 '><a href='https://zekewandeler.github.io/nested.html'>Nested</a></div>
     <div class='col-1 '><a href='https://zekewandeler.github.io/tags.html'>Tags</a></div>
@@ -44,108 +44,33 @@
 
 <div class = "row">
 <div class = "col-3">
-    <h3>Who this?</h3>
+    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Who this?</h3>
+    <hr/>
     <p>All about me:</p>
     <p>Born and raised in Tucson, Arizona. I moved to Boise, Idaho to obtain my college education. First majoring in visual arts, then swithcing to GIMM, I was also able to secure I job at the New Product Development lab at Boise State as a graphic designer. I like many things, but what I love is Star Wars, Cats, Art, Metal, and World of Warcraft. Max Rebo is the best Star Wars character and I will be taking no other comments on that subject matter. I also enjoy swimming, I was a competitive swimmer for more than 6 years of my life so I enjoy my time in the water.</p>
 </div>
 
 <div class = "col-6">
-    <h3>Bars</h3>
+    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Bars</h3>
+    <hr/>
     <div class = "containeryou">
-    <iframe  class = "responsive-iframe" width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
+    <iframe  style ="border-radius: 5%;" class = "responsive-iframe" width="600" height="400" src="https://www.youtube.com/embed/yE8Jswq1mAU"></iframe>
 </div>
 </div>
 
 <div class = "col-3 divani divani:hover" id = "div2"}>
-    <h3>Current Mood Board</h3>
-    <img src = "https://i.pinimg.com/originals/43/0c/12/430c127b05e0543bc1e7ba07d4407995.gif" class="responsive">   
+    <h3 style="text-align:center; font-family: federo, sans-serif; font-size: 30px">Me</h3>
+    <hr/>
+    <div class = "center">
+      <img style ="border-radius: 10%;" src = "SelfPortrait.jpg" width = "280" height="450" class="responsive">   </div>
 </div>
 </div>
-
-
-<!-- Slides -->
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://lumiere-a.akamaihd.net/v1/images/max-rebo-band_c071684c.jpeg?region=0%2C15%2C800%2C449" style="width:100%" class = "responsive">
-      <div class="text">YEAH MAX REBO!!!</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="https://i.pinimg.com/750x/da/b5/5c/dab55c34b312a06a066ebab73e1f0902.jpg" style="width:100%" class = "responsive">
-      <div class="text">Omnnomnom</div>
-    </div>
-    
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://i.pinimg.com/564x/20/fe/f1/20fef1bcce2a7514bfa1f6bc9845fcd7.jpg" style="width:100%" class = "responsive">
-      <div class="text">AAAHHH</div>
-    </div>
-    
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-
-<div class = "row">
-    <div class = "col-3"> </div>
-
-    <div class = "col-6">
-        <div class = "center">
-<img src = "SelfPortrait.jpg" width = "280" height="450">
-        </div>
-    </div>
-
-    <div class = "col-3"></div>
-
-</div>
-
-            <div id="backgroundShape" style="background-color: #8b53f1;"></div>
+<br>
 
 
 <div style="text-align:center">
-  <h2>My Artwork</h2>
+  <h2 style="font-family: federo, sans-serif; font-size: 30px">My Artwork</h2>
+  <hr/>
   <p>Click on the images below:</p>
 </div>
 
