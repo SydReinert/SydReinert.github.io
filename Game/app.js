@@ -68,7 +68,7 @@ function randomApple() {
         appleIndex = Math.floor(Math.random() * squares.length)
     }
     while(squares[appleIndex].classList.contains('snek'))//makes sure apple dont appear on the sneeeek
-    sqaures[appleIndex].classList.add('apple')
+    squares[appleIndex].classList.add('apple')
 }
 
 //assign functions to le keyboard
