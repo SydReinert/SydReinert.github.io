@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',() => {
         intervalTime = 1000
         currentSnek = [2,1,0]
         currentIndex = 0
-        currentSnek.forEach(index => squres[index].classList.add('snek'))
+        currentSnek.forEach(index => squares[index].classList.add('snek'))
         interval = setInterval(moveOutcomes, intervalTime)
     }
 
@@ -34,7 +34,7 @@ function moveOutcomes(){
 
     //snake hitting border and hitting self
     if (
-        (currentSnek[0] + width >- (width * width) && direction === width) || //hits bottoms
+        (currentSnek[0] + width >= (width * width) && direction === width) || //hits bottoms
         (currentSnek[0] % width === width -1 && direction ===1) || //hits right 
         (currentSnek[0] % width === 0 && direction === -1) || //hits left
         (currentSnek[0] - width < 0 && direction === -width) || //hits top
@@ -53,8 +53,8 @@ function moveOutcomes(){
         squares[tail].classList.add('snek')
         currentSnek.push(tail)
         randomApple()
-        score+++
-        scoreDisplay.textContent == score
+        score++
+        scoreDisplay.textContent = score
         clearInterval(interval)
         intervalTime = intervalTime * speed
         interval = setInterval(moveOutcomes, intervalTime)
